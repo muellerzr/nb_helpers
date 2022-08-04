@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Default description (change me)">
+
+<title>nb_helpers - Default Title (change me)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="nb_helpers - Default Title (change me)">
+<meta property="og:description" content="Default description (change me)">
+<meta property="og:site-name" content="nb_helpers">
+<meta name="twitter:title" content="nb_helpers - Default Title (change me)">
+<meta name="twitter:description" content="Default description (change me)">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">nb_helpers</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/wandb/nb_helpers/tree/main/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Default Title (change me)</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./colab.html" class="sidebar-item-text sidebar-link">Default Title (change me)</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wandb.html" class="sidebar-item-text sidebar-link">Default Title (change me)</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./utils.html" class="sidebar-item-text sidebar-link active">Default Title (change me)</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./actions.html" class="sidebar-item-text sidebar-link">Default Title (change me)</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./clean.html" class="sidebar-item-text sidebar-link">Default Title (change me)</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#create_table" id="toc-create_table" class="nav-link active" data-scroll-target="#create_table">create_table</a></li>
+  <li><a href="#remove_rich_format" id="toc-remove_rich_format" class="nav-link" data-scroll-target="#remove_rich_format">remove_rich_format</a></li>
+  <li><a href="#csv_to_md" id="toc-csv_to_md" class="nav-link" data-scroll-target="#csv_to_md">csv_to_md</a></li>
+  <li><a href="#richlogger" id="toc-richlogger" class="nav-link" data-scroll-target="#richlogger">RichLogger</a>
+  <ul class="collapse">
+  <li><a href="#is_nb" id="toc-is_nb" class="nav-link" data-scroll-target="#is_nb">is_nb</a></li>
+  <li><a href="#find_nbs" id="toc-find_nbs" class="nav-link" data-scroll-target="#find_nbs">find_nbs</a></li>
+  <li><a href="#print_output" id="toc-print_output" class="nav-link" data-scroll-target="#print_output">print_output</a></li>
+  <li><a href="#search_cell" id="toc-search_cell" class="nav-link" data-scroll-target="#search_cell">search_cell</a></li>
+  <li><a href="#search_cells" id="toc-search_cells" class="nav-link" data-scroll-target="#search_cells">search_cells</a></li>
+  <li><a href="#search_string_in_nb" id="toc-search_string_in_nb" class="nav-link" data-scroll-target="#search_string_in_nb">search_string_in_nb</a></li>
+  <li><a href="#extract_libs" id="toc-extract_libs" class="nav-link" data-scroll-target="#extract_libs">extract_libs</a></li>
+  <li><a href="#detect_imported_libs" id="toc-detect_imported_libs" class="nav-link" data-scroll-target="#detect_imported_libs">detect_imported_libs</a></li>
+  <li><a href="#git_current_branch" id="toc-git_current_branch" class="nav-link" data-scroll-target="#git_current_branch">git_current_branch</a></li>
+  <li><a href="#git_main_name" id="toc-git_main_name" class="nav-link" data-scroll-target="#git_main_name">git_main_name</a></li>
+  <li><a href="#git_origin_repo" id="toc-git_origin_repo" class="nav-link" data-scroll-target="#git_origin_repo">git_origin_repo</a></li>
+  <li><a href="#git_local_repo" id="toc-git_local_repo" class="nav-link" data-scroll-target="#git_local_repo">git_local_repo</a></li>
+  <li><a href="#git_last_commit" id="toc-git_last_commit" class="nav-link" data-scroll-target="#git_last_commit">git_last_commit</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">today</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/wandb/nb_helpers/tree/main/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Default Title (change me)</h1>
+</div>
+
+<div>
+  <div class="description">
+    Default description (change me)
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<hr>
+<section id="create_table" class="level4">
+<h4 class="anchored" data-anchor-id="create_table">create_table</h4>
+<blockquote class="blockquote">
+<pre><code> create_table (columns=['NotebookPath','Status','RunTime','Colab'],
+               xtra_cols=None)</code></pre>
+</blockquote>
+<hr>
+</section>
+<section id="remove_rich_format" class="level4">
+<h4 class="anchored" data-anchor-id="remove_rich_format">remove_rich_format</h4>
+<blockquote class="blockquote">
+<pre><code> remove_rich_format (text)</code></pre>
+</blockquote>
+<p>Remove rich fancy coloring</p>
+<hr>
+</section>
+<section id="csv_to_md" class="level4">
+<h4 class="anchored" data-anchor-id="csv_to_md">csv_to_md</h4>
+<blockquote class="blockquote">
+<pre><code> csv_to_md (csv_file_path, delimiter=';')</code></pre>
+</blockquote>
+<p>From csv file to markdown table, useful for github posting</p>
+<hr>
+</section>
+<section id="richlogger" class="level3">
+<h3 class="anchored" data-anchor-id="richlogger">RichLogger</h3>
+<blockquote class="blockquote">
+<pre><code> RichLogger (columns, out_file='summary_table.csv', width=180)</code></pre>
+</blockquote>
+<p>A simple logger that logs to a file and the rich console</p>
+<hr>
+<section id="is_nb" class="level4">
+<h4 class="anchored" data-anchor-id="is_nb">is_nb</h4>
+<blockquote class="blockquote">
+<pre><code> is_nb (fname:pathlib.Path)</code></pre>
+</blockquote>
+<p>filter files that are jupyter notebooks</p>
+<hr>
+</section>
+<section id="find_nbs" class="level4">
+<h4 class="anchored" data-anchor-id="find_nbs">find_nbs</h4>
+<blockquote class="blockquote">
+<pre><code> find_nbs (path:pathlib.Path)</code></pre>
+</blockquote>
+<p>Get all nbs on path recursively</p>
+<hr>
+</section>
+<section id="print_output" class="level4">
+<h4 class="anchored" data-anchor-id="print_output">print_output</h4>
+<blockquote class="blockquote">
+<pre><code> print_output (notebook)</code></pre>
+</blockquote>
+<p>Print <code>notebook</code> in stdout for git things</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>notebook</td>
+<td>pragma: no cover</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="search_cell" class="level4">
+<h4 class="anchored" data-anchor-id="search_cell">search_cell</h4>
+<blockquote class="blockquote">
+<pre><code> search_cell (cell, string)</code></pre>
+</blockquote>
+<p>Search string in cell source, can be a list</p>
+<hr>
+</section>
+<section id="search_cells" class="level4">
+<h4 class="anchored" data-anchor-id="search_cells">search_cells</h4>
+<blockquote class="blockquote">
+<pre><code> search_cells (nb, string:str=None, cell_type='code')</code></pre>
+</blockquote>
+<p>Get cells containing string, you can pass comma separated strings</p>
+<hr>
+</section>
+<section id="search_string_in_nb" class="level4">
+<h4 class="anchored" data-anchor-id="search_string_in_nb">search_string_in_nb</h4>
+<blockquote class="blockquote">
+<pre><code> search_string_in_nb (nb, string:str=None, cell_type='code')</code></pre>
+</blockquote>
+<p>Check if string is present in notebook cells, you can pass comma separated strings</p>
+<hr>
+</section>
+<section id="extract_libs" class="level4">
+<h4 class="anchored" data-anchor-id="extract_libs">extract_libs</h4>
+<blockquote class="blockquote">
+<pre><code> extract_libs (strings)</code></pre>
+</blockquote>
+<p>Automatically detect libraries imported in <code>strings</code></p>
+<hr>
+</section>
+<section id="detect_imported_libs" class="level4">
+<h4 class="anchored" data-anchor-id="detect_imported_libs">detect_imported_libs</h4>
+<blockquote class="blockquote">
+<pre><code> detect_imported_libs (notebook)</code></pre>
+</blockquote>
+<p>Guess imported libs from notebook</p>
+<hr>
+</section>
+<section id="git_current_branch" class="level4">
+<h4 class="anchored" data-anchor-id="git_current_branch">git_current_branch</h4>
+<blockquote class="blockquote">
+<pre><code> git_current_branch (fname)</code></pre>
+</blockquote>
+<p>Get current git branch</p>
+<hr>
+</section>
+<section id="git_main_name" class="level4">
+<h4 class="anchored" data-anchor-id="git_main_name">git_main_name</h4>
+<blockquote class="blockquote">
+<pre><code> git_main_name (fname)</code></pre>
+</blockquote>
+<p>Get the name of master/main branch</p>
+<hr>
+</section>
+<section id="git_origin_repo" class="level4">
+<h4 class="anchored" data-anchor-id="git_origin_repo">git_origin_repo</h4>
+<blockquote class="blockquote">
+<pre><code> git_origin_repo (fname)</code></pre>
+</blockquote>
+<p>Get github repo name from <code>fname</code></p>
+<hr>
+</section>
+<section id="git_local_repo" class="level4">
+<h4 class="anchored" data-anchor-id="git_local_repo">git_local_repo</h4>
+<blockquote class="blockquote">
+<pre><code> git_local_repo (fname)</code></pre>
+</blockquote>
+<p>Get local github repo path</p>
+<hr>
+</section>
+<section id="git_last_commit" class="level4">
+<h4 class="anchored" data-anchor-id="git_last_commit">git_last_commit</h4>
+<blockquote class="blockquote">
+<pre><code> git_last_commit (fname)</code></pre>
+</blockquote>
+<p>Gets the last commit on fname</p>
+<hr>
+</section>
+<section id="today" class="level4">
+<h4 class="anchored" data-anchor-id="today">today</h4>
+<blockquote class="blockquote">
+<pre><code> today ()</code></pre>
+</blockquote>
+<p>datetime object containing current date and time</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

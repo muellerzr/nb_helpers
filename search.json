@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "Default Title (change me)",
+    "section": "",
+    "text": "create_table\n\n create_table (columns=['NotebookPath','Status','RunTime','Colab'],\n               xtra_cols=None)\n\n\n\n\nremove_rich_format\n\n remove_rich_format (text)\n\nRemove rich fancy coloring\n\n\n\ncsv_to_md\n\n csv_to_md (csv_file_path, delimiter=';')\n\nFrom csv file to markdown table, useful for github posting\n\n\n\nRichLogger\n\n RichLogger (columns, out_file='summary_table.csv', width=180)\n\nA simple logger that logs to a file and the rich console\n\n\nis_nb\n\n is_nb (fname:pathlib.Path)\n\nfilter files that are jupyter notebooks\n\n\n\nfind_nbs\n\n find_nbs (path:pathlib.Path)\n\nGet all nbs on path recursively\n\n\n\nprint_output\n\n print_output (notebook)\n\nPrint notebook in stdout for git things\n\n\n\n\nDetails\n\n\n\n\nnotebook\npragma: no cover\n\n\n\n\n\n\nsearch_cell\n\n search_cell (cell, string)\n\nSearch string in cell source, can be a list\n\n\n\nsearch_cells\n\n search_cells (nb, string:str=None, cell_type='code')\n\nGet cells containing string, you can pass comma separated strings\n\n\n\nsearch_string_in_nb\n\n search_string_in_nb (nb, string:str=None, cell_type='code')\n\nCheck if string is present in notebook cells, you can pass comma separated strings\n\n\n\nextract_libs\n\n extract_libs (strings)\n\nAutomatically detect libraries imported in strings\n\n\n\ndetect_imported_libs\n\n detect_imported_libs (notebook)\n\nGuess imported libs from notebook\n\n\n\ngit_current_branch\n\n git_current_branch (fname)\n\nGet current git branch\n\n\n\ngit_main_name\n\n git_main_name (fname)\n\nGet the name of master/main branch\n\n\n\ngit_origin_repo\n\n git_origin_repo (fname)\n\nGet github repo name from fname\n\n\n\ngit_local_repo\n\n git_local_repo (fname)\n\nGet local github repo path\n\n\n\ngit_last_commit\n\n git_last_commit (fname)\n\nGets the last commit on fname\n\n\n\ntoday\n\n today ()\n\ndatetime object containing current date and time"
+  },
+  {
+    "objectID": "actions.html",
+    "href": "actions.html",
+    "title": "Default Title (change me)",
+    "section": "",
+    "text": "get_colab_url2md\n\n get_colab_url2md (fname:pathlib.Path, branch='main',\n                   github_repo='nb_helpers', as_badge=False)\n\nCreate colab links in md\n\n\n\ncreate_comment_body\n\n create_comment_body (title, nb_files, branch, github_repo)\n\nCreates a MD list of fnames with links to colab\n\n\n\nafter_pr_colab_link\n\n after_pr_colab_link (owner='wandb', repo='nb_helpers', token=None)\n\nOn PR post a comment with links to open in colab for each changed nb\n\n\n\ncreate_issue_nb_fail\n\n create_issue_nb_fail (fname, traceback=None, owner='wandb',\n                       repo='nb_helpers', token=None)\n\nCreates issue of failing nb"
+  },
+  {
+    "objectID": "wandb.html",
+    "href": "wandb.html",
+    "title": "Default Title (change me)",
+    "section": "",
+    "text": "get_wandb_tracker\n\n get_wandb_tracker (nb)\n\nGet the value inside \n\n\n\nsearch_code\n\n search_code (nb,\n              features='Table,sweep,WandbCallback,WandbLogger,Artifact')\n\nSearch notebook for features\n\n\n\nsummary_nbs\n\n summary_nbs (path:pathlib.Path<Apathtonbfiles>='/home/runner/work/nb_help\n              ers/nb_helpers/nbs', wandb_features:str<wandbfeaturestoident\n              ify,commaseparated>='Table,sweep,WandbCallback,WandbLogger,A\n              rtifact',\n              out_file:pathlib.Path<Exporttocsvfile>='summary_table.csv', \n              github_issue:<Createsa`github_issue.md`filereadytobeputonlin\n              e>=True, full_path:<Usefullpathforfname>=False)\n\n\n\n\nfix_nbs\n\n fix_nbs (path:pathlib.Path<Apathtonbfiles>='/home/runner/work/nb_helpers/\n          nb_helpers/nbs',\n          colab_cell_idx:int<Cellidxwherethecolabbadgemustgo>=0,\n          branch:str<Thebranch>=None)\n\n\n\n\nfilter_nbs\n\n filter_nbs (path:pathlib.Path<Apathtonbfiles>='/home/runner/work/nb_helpe\n             rs/nb_helpers/nbs',\n             lib_name:str<Pythonlibnamestofilter,eg:tensorflow>='',\n             out_file:pathlib.Path<Exporttocsvfile>='filtered_nbs.csv')"
+  },
+  {
+    "objectID": "clean.html",
+    "href": "clean.html",
+    "title": "Default Title (change me)",
+    "section": "",
+    "text": "rm_execution_count\n\n rm_execution_count (o)\n\nRemove execution count in o\n\n\n\nclean_output_data_vnd\n\n clean_output_data_vnd (o)\n\nRemove application/vnd.google.colaboratory.intrinsic+json in data entries\n\n\n\nclean_cell_output\n\n clean_cell_output (cell)\n\nRemove execution count in cell\n\n\n\nclean_cell\n\n clean_cell (cell, clear_all=False)\n\nClean cell by removing superfluous metadata or everything except the input if clear_all\n\n\n\nclean_nb\n\n clean_nb (nb, clear_all=False)\n\nClean nb from superfluous metadata, passing clear_all to clean_cell\n\n\n\nclean_one\n\n clean_one (fname:pathlib.Path, clear_outs:bool=False, disp:bool=False)\n\nClean notebook metadata:\n\n\n\nclean_all\n\n clean_all (path:pathlib.Path, clear_outs=True, disp=False)\n\nApply clean to all nbs inside path recursvely\n\n\n\nclean_nbs\n\n clean_nbs (path:pathlib.Path<Apathtonbfiles>='/home/runner/work/nb_helper\n            s/nb_helpers/nbs', clear_outs:<Removecelloutputs>=False,\n            verbose:<Rnunonverbosemdoe>=False)\n\nClean notebooks on path from useless metadata"
+  },
+  {
+    "objectID": "colab.html",
+    "href": "colab.html",
+    "title": "Default Title (change me)",
+    "section": "",
+    "text": "get_colab_url\n\n get_colab_url (fname, branch)\n\nGet git repo url, to append to colab\n\n\n\nhas_colab_badge\n\n has_colab_badge (nb)\n\nCheck if notebook has colab badge, returns the cell position, -1 if not present\n\n\n\ncreate_colab_badge_cell\n\n create_colab_badge_cell (fname, branch=None, meta={}, tracker=None)\n\nCreate a colab badge cell from fname\n\n\n\nadd_colab_badge\n\n add_colab_badge (notebook, fname, branch=None, idx=0, meta={'id':'view-\n                  in-github','colab_type':'text'}, tracker=None)\n\nAdd a badge to Open In Colab in the idx cell\n\n\n\nadd_colab_metadata\n\n add_colab_metadata (notebook, meta={'accelerator':'GPU','colab':{'include\n                     _colab_link':True,'toc_visible':True}})\n\nAdds GPU and colab meta to notebook"
+  }
+]
